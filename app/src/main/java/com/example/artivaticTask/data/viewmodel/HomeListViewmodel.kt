@@ -10,6 +10,7 @@ class HomeListViewmodel  : ViewModel(){
     fun getFeeds() = liveData(Dispatchers.IO) {
         try {
             var response = DataRepository.getFeed()
+            DataRepository.feedResponse=response
             emit(Result.success(response))
         } catch (exception: Exception) {
             emit(Result.failure(exception))
