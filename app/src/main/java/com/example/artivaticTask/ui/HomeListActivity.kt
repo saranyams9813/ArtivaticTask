@@ -1,11 +1,12 @@
-package com.example.artivaticTask
+package com.example.artivaticTask.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.artivaticTask.R
 
-class MainActivity : AppCompatActivity() {
+class HomeListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home_list)
     }
 }
